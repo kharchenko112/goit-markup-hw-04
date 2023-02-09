@@ -51,7 +51,6 @@ body {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-
 }
 .nav-list {
   display: flex;
@@ -76,7 +75,7 @@ body {
 }
 
 .nav-link {
-  padding-top: 24x;
+  padding-top: 24px;
   padding-bottom: 24px;
   font-weight: 500;
   font-size: 16px;
@@ -119,8 +118,7 @@ body {
   padding-bottom: 188px;
 }
 
-  
-.hero-title{
+.hero-title {
   margin: 0 auto;
   margin-bottom: 48px;
   text-align: center;
@@ -228,6 +226,8 @@ body {
 .team-container {
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-right: 16px;
+  padding-left: 16px;
   text-align: center;
   background-color: var(--second-color-text);
 }
@@ -252,9 +252,41 @@ body {
 .team-member-descr {
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 8px;
 }
 .team-item + .team-item {
   margin-left: 24px;
+}
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-soc-item {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--second-background-color);
+  border-radius: 50%;
+}
+.team-soc-item:hover,
+.team-soc-item:focus {
+  background: var(--accent-color);
+}
+
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-soc-icon {
+  display: flex;
+  justify-content: center;
 }
 /* ---------------------BTN-PORTFOLIO------------------------ */
 
@@ -342,7 +374,6 @@ body {
   margin-right: 24px;
   margin-bottom: 48px;
   width: 360px;
-  
 }
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
@@ -358,12 +389,10 @@ body {
   line-height: 1.2;
   color: var(--main-color-title);
   margin-bottom: 8px;
- 
 }
 .portfolio-category {
   font-size: 16px;
   line-height: 1.5;
-  
 }
 .portfolio-container {
   padding: 32px 16px;
@@ -372,9 +401,19 @@ body {
 
 /* -------------------------FOOTER---------------- */
 .footer {
+  background: var(--main-color-title);
+}
+.footer {
   padding-top: 100px;
   padding-bottom: 100px;
-  
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+ 
+}
+.footer-logo{
+margin-right: 120px;
 }
 .footer-link {
   display: inline-block;
@@ -393,12 +432,50 @@ body {
 .studio-item {
   color: var(--main-background-color);
 }
-.footer {
-  background: var(--main-color-title);
-}
 .footer-text {
+  display: block;
   width: 264px;
   font-size: 16px;
   line-height: 1.5;
   color: var(--additional-color);
+  margin-right: 0;
+}
+
+.footer-social-text {
+
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--second-color-text)
+}
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer-social-item {
+
+  width: 40px;
+  height: 40px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer-social-item:hover,
+.footer-social-item:focus {
+  background: #31d0aa;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-soc-icon {
 }
