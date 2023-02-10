@@ -116,10 +116,11 @@ body {
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
-  background-image: url(../images/people-office\ 1.png);
+  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  url(/images/people-office\ 1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: 
+  background-position: center;
 }
 
 
@@ -185,6 +186,7 @@ body {
   margin-left: 24px;
 }
 .features-title {
+  display: block;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -193,10 +195,35 @@ body {
   align-items: center;
 }
 
+.feature-item::before{
+  display: block;
+  content: "";
+  width: 264px;
+  height: 112px;
+  background-color: #F4F4FD;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px; 
+}
+
+.features-link{
+background: var(--cloud-color);
+width: 264px;
+height: 112px;
+border-radius: 4px;
+margin-bottom: 8px;
+}
+.features-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+
+  
 .features-text {
   font-size: 16px;
   line-height: 1.5;
 }
+
 /* -------------------------ABOUT----------------------------- */
 .about-section {
   padding-top: 0;
