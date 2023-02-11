@@ -356,13 +356,12 @@ body {
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon{
   
-fill: var(--accent-color);
+  fill: var(--accent-color);
 }
 .customers-link:hover,
 .customers-link:focus{
   border: 1px solid var(--accent-color);
 }
-
 
 .customers-icon {
   fill: #afb1b8;
