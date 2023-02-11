@@ -353,18 +353,21 @@ body {
   width: 168px;
   height: 88px;
 }
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon{
+  
+fill: var(--accent-color);
+}
 .customers-link:hover,
-.customers-link:focus {
+.customers-link:focus{
   border: 1px solid var(--accent-color);
 }
+
 
 .customers-icon {
   fill: #afb1b8;
 }
-.customers-icon:hover,
-.customers-icon:focus {
-  fill: var(--accent-color);
-}
+
 
 /* ---------------------BTN-PORTFOLIO------------------------ */
 
