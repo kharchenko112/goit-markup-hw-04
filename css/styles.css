@@ -132,7 +132,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office\ 1.png);
+    url(../images/people-office\ 1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -496,7 +496,7 @@ body {
 }
 .footer-container {
   display: flex;
-  align-items: center;
+  
 }
 .footer-logo {
   margin-right: 120px;
