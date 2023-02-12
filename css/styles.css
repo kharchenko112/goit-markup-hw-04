@@ -346,7 +346,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #8e8f99;
+  border: 1px solid #AFB1B8; 
   color: currentColor;
   border-radius: 4px;
   background: var(--second-color-text);
@@ -364,7 +364,7 @@ body {
 }
 
 .customers-icon {
-  fill: #afb1b8;
+  fill:  #AFB1B8;
 }
 
 
@@ -383,8 +383,6 @@ body {
   letter-spacing: 0.04em;
   color: var(--second-color-text);
   cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: 1px solid var(--second-background-color);
 }
@@ -398,6 +396,8 @@ body {
 .button-name:focus {
   background-color: var(--accent-color);
   color: var(--main-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .btn-item:hover,
 .btn-item:focus {
@@ -458,10 +458,7 @@ body {
   width: 360px;
   cursor: pointer;
 }
-.portfolio-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -469,6 +466,19 @@ body {
 .portfolio-item:nth-child(n + 7) {
   margin-bottom: 0;
 }
+.portfolio-photo-link{
+  display: block;
+  text-decoration: none;
+  
+}
+.portfolio-photo-link:hover,
+.portfolio-photo-link:focus{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+
+
 
 .portfolio-text {
   font-weight: 500;
@@ -478,6 +488,8 @@ body {
   margin-bottom: 8px;
 }
 .portfolio-category {
+  font-family: inherit;
+  color: var(--main-color-text);
   font-size: 16px;
   line-height: 1.5;
 }
