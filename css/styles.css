@@ -456,7 +456,7 @@ body {
   margin-right: 24px;
   margin-bottom: 48px;
   width: 360px;
-  cursor: pointer;
+ cursor: pointer;
 }
 
 .portfolio-item:nth-child(3n) {
